@@ -33,6 +33,7 @@ export default {
       })
     })
     console.log(state.count);
+    console.log(props);
     //定义响应式变量
     const min = ref(0)
     console.log(min.value);
