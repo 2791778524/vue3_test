@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { onBeforeMount, onBeforeUpdate, onMounted, onUpdated, reactive, ref, computed } from 'vue'
+import { onBeforeMount, onBeforeUpdate, onMounted, onUpdated, reactive, ref, computed, onUnmounted, onBeforeUnmount } from 'vue'
 export default {
   name: "App",
   data() {
@@ -63,6 +63,14 @@ export default {
     //组件更新前
     onBeforeUpdate(()=>{
       console.log('数据更新前')
+    })
+    //组件销毁后
+    onUnmounted(()=>{
+      console.log('组件销毁后');
+    })
+    //组件销毁前
+    onBeforeUnmount(()=>{
+      console.log('组件销毁前');
     })
     return {
       name,
