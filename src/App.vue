@@ -43,10 +43,6 @@ export default {
       scoure = 100;
       return scoure;
     }
-    // function getAddress() {
-    //   address = "xxx";
-    //   return address;
-    // }
     function editCount() {
       min.value = 10
       console.log(min);
