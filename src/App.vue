@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { onBeforeMount, onBeforeUpdate, onMounted, onUpdated, reactive, ref, computed, onUnmounted, onBeforeUnmount } from 'vue'
+import { onBeforeMount, onBeforeUpdate, onMounted, onUpdated, reactive, ref, computed, onUnmounted, onBeforeUnmount, onErrorCaptured } from 'vue'
 export default {
   name: "App",
   data() {
@@ -71,6 +71,10 @@ export default {
     //组件销毁前
     onBeforeUnmount(()=>{
       console.log('组件销毁前');
+    })
+    //捕获错误
+    onErrorCaptured(()=>{
+      console.log('捕获错误');
     })
     return {
       name,
