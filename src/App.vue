@@ -30,7 +30,7 @@ export default {
       sex: "男",
     };
   },
-  setup(props, { emit }) {
+  setup(prop, { emit }) {
     let name = "张三";
     let age = 20;
     let scoure = 0;
@@ -61,31 +61,31 @@ export default {
     }
     //组件加载完成
     onMounted(() => {
-      console.log("组件加载完成");
+      console.log("组件加载完成")
     });
     //组件加载前
     onBeforeMount(() => {
-      console.log("组件加载完成前");
+      console.log("组件加载完成前")
     });
     //组件更新后
     onUpdated(() => {
-      console.log("数据更新后");
+      console.log("数据更新后")
     });
     //组件更新前
     onBeforeUpdate(() => {
-      console.log("数据更新前");
+      console.log("数据更新前")
     });
     //组件销毁后
     onUnmounted(() => {
-      console.log("组件销毁后");
+      console.log("组件销毁后")
     });
     //组件销毁前
     onBeforeUnmount(() => {
-      console.log("组件销毁前");
+      console.log("组件销毁前")
     });
     //捕获错误
     onErrorCaptured(() => {
-      console.log("捕获错误");
+      console.log("捕获错误")
     });
     return {
       name,
