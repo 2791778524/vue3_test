@@ -50,19 +50,19 @@ export default {
     }
     //组件加载完成
     onMounted(()=>{
-      console.log('组件加载完成')
+      console.log('组件加载完成');
     })
     //组件加载前
     onBeforeMount(()=>{
-      console.log('组件加载完成前')
+      console.log('组件加载完成前');
     })
     //组件更新后
     onUpdated(()=>{
-      console.log('数据更新后')
+      console.log('数据更新后');
     })
     //组件更新前
     onBeforeUpdate(()=>{
-      console.log('数据更新前')
+      console.log('数据更新前');
     })
     return {
       name,
