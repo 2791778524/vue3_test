@@ -72,7 +72,6 @@ export default {
       state,
       say,
       sum,
-      // getAddress,
       editCount
     };
   },
