@@ -66,15 +66,15 @@ export default {
     })
     //组件销毁后
     onUnmounted(()=>{
-      console.log('组件销毁后');
+      console.log('组件销毁后')
     })
     //组件销毁前
     onBeforeUnmount(()=>{
-      console.log('组件销毁前');
+      console.log('组件销毁前')
     })
     //捕获错误
     onErrorCaptured(()=>{
-      console.log('捕获错误');
+      console.log('捕获错误')
     })
     return {
       name,
